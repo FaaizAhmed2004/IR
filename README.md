@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KJ Accounting & Tax Services LLC - Business Website
+
+This is the official website for KJ Accounting & Tax Services LLC, built with [Next.js](https://nextjs.org) and modern web technologies.
+
+## About
+
+KJ Accounting & Tax Services LLC provides professional business solutions and quality products to individuals, small businesses, and corporations across Ontario. Based in Whitby, we serve the greater Ontario area including Oshawa.
 
 ## Getting Started
 
@@ -16,18 +22,31 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Professional business website design
+- Product catalog and e-commerce functionality
+- Responsive design for mobile and desktop
+- Contact forms and business information
+- Legal compliance pages
+- SEO optimized
 
-## Learn More
+## Business Information
 
-To learn more about Next.js, take a look at the following resources:
+- **Company**: KJ Accounting & Tax Services LLC
+- **Contact**: Khizar Javaid
+- **Address**: 152 Brownridge Place, Whitby, Ontario L1P1W3
+- **Phone**: +1 (289) 991-0909
+- **Service Areas**: Oshawa, Whitby, Ontario
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technology Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- Shadcn/ui Components
+- Lucide React Icons
 
 ## Deploy on Vercel
 

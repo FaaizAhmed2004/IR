@@ -1,129 +1,269 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
 import Header from "@/components/header"
 import Footer from "@/components/Footer"
+import { ShoppingBag, Star, Truck, Shield, Phone, Utensils, Heart, Zap } from "lucide-react"
 
 export default function homepage() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
       <Header />
+      
       {/* Hero Section */}
-      <section className="relative h-[600px] w-full overflow-hidden">
-        <Image
-          src="/scene.jpg"
-          alt="Mountain landscape with tents"
-          fill
-          className="object-cover object-center"
-          priority
-        />
-        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 text-center">
-          <h1 className="text-5xl md:text-7xl font-serif text-white mb-4 drop-shadow-lg">KJ Accounting & Tax Professional Corporation</h1>
-          <p className="text-lg md:text-xl text-white mb-8 max-w-2xl drop-shadow-lg">
-            “Top-quality camping equipment for every explorer.”
+      <section className="relative h-[600px] w-full overflow-hidden bg-gradient-to-r from-blue-600 to-blue-800">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-lg">
+            Quality Products from KJ
+          </h1>
+          <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl drop-shadow-lg">
+            Professional business solutions and premium products for individuals, small businesses, and corporations across Ontario.
           </p>
-          <Button
-            variant="outline"
-            className="border-white text-white hover:bg-white hover:text-gray-800 transition-colors duration-300 px-8 py-6 text-lg bg-transparent"
-          >
-            EXPLORE
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button
+              className="bg-white text-blue-600 hover:bg-blue-50 transition-colors duration-300 px-8 py-6 text-lg font-semibold"
+            >
+              <ShoppingBag className="mr-2 h-5 w-5" />
+              Shop Now
+            </Button>
+            <Button
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-blue-600 transition-colors duration-300 px-8 py-6 text-lg bg-transparent"
+            >
+              Learn More
+            </Button>
+          </div>
         </div>
       </section>
 
-      {/* Our Collection Section */}
+      {/* Featured Products Section */}
       <section className="py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-serif mb-4">Our Collection</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Featured Products</h2>
           <p className="text-lg text-gray-600">
-            Explore our premium camping gear, from durable tents to portable cooking tools. Designed for comfort and
-            reliability, our collection ensures unforgettable outdoor adventures for all explorers.
+            Discover our top-selling products carefully selected for quality, value, and customer satisfaction.
           </p>
         </div>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="md:col-span-1 lg:col-span-2">
-            <Image
-              src="/stove.jpg"
-              alt="Camping stove with food"
-              width={900}
-              height={600}
-              className="w-full h-full object-cover rounded-lg shadow-md"
-            />
-          </div>
-          <div className="grid grid-cols-1 gap-6">
-            <Image
-              src="/gas.jpg"
-              alt="Portable camping stove"
-              width={450}
-              height={300}
-              className="w-full h-full object-cover rounded-lg shadow-md"
-            />
-            <Image
-              src="/powerbank.jpg"
-              alt="Portable power bank"
-              width={450}
-              height={300}
-              className="w-full h-full object-cover rounded-lg shadow-md"
-            />
-            <Image
-              src="/Camping.jpg"
-              alt="Large camping tent setup"
-              width={450}
-              height={300}
-              className="w-full h-full object-cover rounded-lg shadow-md"
-            />
-          </div>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Card className="group hover:shadow-lg transition-shadow duration-300">
+            <CardContent className="p-0">
+              <div className="relative h-48 bg-gradient-to-br from-orange-100 to-orange-200">
+                <Image
+                  src="/kitchen_essentials.jpeg"
+                  alt="Kitchen Essentials Collection"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-semibold">
+                  FEATURED
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Kitchen Essentials</h3>
+                <p className="text-gray-600 mb-4">Premium kitchen tools and accessories for home and professional use.</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-2xl font-bold text-gray-900">$29.99</span>
+                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                    <ShoppingBag className="mr-2 h-4 w-4" />
+                    Add to Cart
+                  </Button>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+          
+          <Card className="group hover:shadow-lg transition-shadow duration-300">
+            <CardContent className="p-0">
+              <div className="relative h-48 bg-gradient-to-br from-pink-100 to-pink-200">
+                <Image
+                  src="/skincare.jpeg"
+                  alt="Premium Skincare Products"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-semibold">
+                  SALE
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Skincare Collection</h3>
+                <p className="text-gray-600 mb-4">Professional-grade skincare products for daily wellness routines.</p>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl font-bold text-gray-900">$24.99</span>
+                    <span className="text-sm text-gray-500 line-through">$34.99</span>
+                  </div>
+                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                    <ShoppingBag className="mr-2 h-4 w-4" />
+                    Add to Cart
+                  </Button>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+          
+          <Card className="group hover:shadow-lg transition-shadow duration-300">
+            <CardContent className="p-0">
+              <div className="relative h-48 bg-gradient-to-br from-blue-100 to-blue-200">
+                <Image
+                  src="/powerbank.jpg"
+                  alt="Portable Power Solutions"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-500 text-white px-2 py-1 rounded text-xs font-semibold">
+                  NEW
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Power Solutions</h3>
+                <p className="text-gray-600 mb-4">Reliable portable power banks and charging accessories for business.</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-2xl font-bold text-gray-900">$39.99</span>
+                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                    <ShoppingBag className="mr-2 h-4 w-4" />
+                    Add to Cart
+                  </Button>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
-      {/* Providing High Quality Camping Essentials Section */}
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-100">
+      {/* Product Categories Section */}
+      <section className="py-16 px-4 md:px-8 lg:px-16 bg-white">
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Shop by Category</h2>
+          <p className="text-lg text-gray-600">
+            Browse our organized product categories to find exactly what you need for your personal and business requirements.
+          </p>
+        </div>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <Card className="group hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+            <CardContent className="p-6 text-center">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Utensils className="h-8 w-8 text-orange-600" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Kitchen & Home</h3>
+              <p className="text-gray-600 text-sm mb-4">Essential tools and accessories for modern living</p>
+              <Button variant="outline" size="sm" className="w-full">Browse Category</Button>
+            </CardContent>
+          </Card>
+          
+          <Card className="group hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+            <CardContent className="p-6 text-center">
+              <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Heart className="h-8 w-8 text-pink-600" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Health & Beauty</h3>
+              <p className="text-gray-600 text-sm mb-4">Premium wellness and personal care products</p>
+              <Button variant="outline" size="sm" className="w-full">Browse Category</Button>
+            </CardContent>
+          </Card>
+          
+          <Card className="group hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+            <CardContent className="p-6 text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Zap className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Electronics</h3>
+              <p className="text-gray-600 text-sm mb-4">Tech accessories and power solutions</p>
+              <Button variant="outline" size="sm" className="w-full">Browse Category</Button>
+            </CardContent>
+          </Card>
+          
+          <Card className="group hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+            <CardContent className="p-6 text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <ShoppingBag className="h-8 w-8 text-green-600" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Business Essentials</h3>
+              <p className="text-gray-600 text-sm mb-4">Professional products for business operations</p>
+              <Button variant="outline" size="sm" className="w-full">Browse Category</Button>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* About Our Business Section */}
+      <section className="py-16 px-4 md:px-8 lg:px-16 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <Image
-              src="/fire.jpg"
-              alt="Campfire cooking scene"
-              width={800}
-              height={600}
-              className="w-full h-full object-cover rounded-lg shadow-md"
-            />
-          </div>
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-serif leading-tight">Providing high quality camping essentials</h2>
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight text-gray-900">
+              Professional Business Solutions
+            </h2>
             <p className="text-gray-700 text-lg leading-relaxed">
-              We have been committed to providing high-quality camping essentials designed to elevate your outdoor
-              experiences. Our journey began with a passion for adventure and a mission to equip fellow explorers with
-              durable, reliable, and innovative gear. From rugged tents to versatile cooking equipment, our products are
-              crafted to withstand the toughest terrains and make every adventure memorable.
+              KJ Accounting & Tax Services LLC is committed to providing quality products and professional business solutions. 
+              Our mission is to serve individuals, small businesses, and corporations across Ontario with reliable products 
+              and exceptional service.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              We take pride in sourcing premium materials and offering a diverse range of camping solutions tailored to
-              meet the needs of all outdoor enthusiasts. Whether you are a seasoned adventurer or a first-time camper,
-              our collection is built to ensure safety, comfort, and convenience, allowing you to focus on what truly
-              matters—enjoying the great outdoors.
+              Based in Whitby and serving the greater Ontario area including Oshawa, we take pride in our commitment to 
+              quality, reliability, and customer satisfaction. Our business is built on trust, professionalism, and 
+              delivering value to our customers.
             </p>
+            <div className="flex flex-wrap gap-4">
+              <div className="flex items-center gap-2">
+                <Truck className="h-5 w-5 text-blue-600" />
+                <span className="text-sm font-medium">Fast Shipping</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Shield className="h-5 w-5 text-green-600" />
+                <span className="text-sm font-medium">Quality Guaranteed</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone className="h-5 w-5 text-purple-600" />
+                <span className="text-sm font-medium">Professional Support</span>
+              </div>
+            </div>
+          </div>
+          <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-lg">
+            <div className="text-center">
+              <div className="w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <ShoppingBag className="h-12 w-12 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Get Started?</h3>
+              <p className="text-gray-600 mb-6">
+                Explore our product catalog and discover quality solutions for your needs.
+              </p>
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+                Browse Products
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Us Section */}
-      <section className="py-16 px-4 md:px-8 lg:px-16">
+      {/* Contact Section */}
+      <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-100">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-serif mb-4">Contact Us</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Get in Touch</h2>
           <p className="text-lg text-gray-600">
-            Reach out to KJ Accounting & Tax Professional Corporation for your accounting and tax needs.
+            Contact KJ Accounting & Tax Services LLC for product inquiries and business solutions.
           </p>
         </div>
-        <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md text-center">
-          <h3 className="text-2xl font-semibold mb-4">KJ Accounting & Tax Professional Corporation</h3>
-          <p className="text-lg text-gray-700 mb-2">Khizar Javaid</p>
-          <p className="text-lg text-gray-700 mb-2">152 Brownridge Place</p>
-          <p className="text-lg text-gray-700 mb-2">Whitby Ontario L1P1W3</p>
-          <p className="text-lg text-gray-700">
-            Phone:{" "}
-            <a href="tel:+12899910909" className="text-blue-600 hover:underline">
-              +1 (289) 991-0909
-            </a>
-          </p>
+        <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
+          <div className="text-center space-y-4">
+            <h3 className="text-2xl font-semibold text-gray-900">KJ Accounting & Tax Services LLC</h3>
+            <div className="space-y-2 text-gray-700">
+              <p className="font-medium">Khizar Javaid</p>
+              <p>152 Brownridge Place</p>
+              <p>Whitby, Ontario L1P1W3</p>
+              <p>
+                Phone:{" "}
+                <a href="tel:+12899910909" className="text-blue-600 hover:underline font-medium">
+                  +1 (289) 991-0909
+                </a>
+              </p>
+              <p className="text-sm text-gray-500 mt-4">
+                Serving Oshawa, Whitby, and Ontario
+              </p>
+            </div>
+            <Button className="mt-6 bg-blue-600 hover:bg-blue-700 text-white">
+              Contact Us Today
+            </Button>
+          </div>
         </div>
       </section>
 
