@@ -6,12 +6,12 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "The Design Scratch LLC - Premium Daily Use Products | Atlanta, Georgia",
+  title: "KJ Accounting & Tax Professional Corporation",
   description:
-    "The Design Scratch LLC offers high-quality daily use products including home essentials, personal care items, and lifestyle products. Based in Atlanta, Georgia. Shop now for premium everyday essentials.",
+    "Accounting & Tax Professional Corporation",
   keywords:
     "daily use products, home essentials, personal care, kitchen products, lifestyle items, Atlanta Georgia, The Design Scratch LLC",
-  authors: [{ name: "The Design Scratch LLC" }],
+  authors: [{ name: "KJ Accounting & Tax Professional Corporation" }],
   creator: "The Design Scratch LLC",
   publisher: "The Design Scratch LLC",
   robots: "index, follow",

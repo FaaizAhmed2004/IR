@@ -13,9 +13,9 @@ export default function HomePage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">DS</span>
+                <span className="text-white font-bold text-sm">KJ</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">The Design Scratch LLC</span>
+              <span className="text-xl font-bold text-gray-900">Accounting & Tax Professional Corporation</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">
@@ -532,11 +532,7 @@ export default function HomePage() {
               <div>
                 <div className="text-2xl font-bold mb-2">Address</div>
                 <div className="text-blue-100">
-                  2532 N Decatur Road
-                  <br />
-                  Abberly Onyx Apt 1111
-                  <br />
-                  Atlanta, Georgia 30033
+               152 Brownridge Place Whitby Ontario L1P1W3
                 </div>
               </div>
             </div>
@@ -551,16 +547,14 @@ export default function HomePage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">DS</span>
+                  <span className="text-white font-bold text-sm">KJ</span>
                 </div>
-                <span className="text-xl font-bold">The Design Scratch LLC</span>
+                <span className="text-xl font-bold">Accounting & Tax Professional Corporation</span>
               </div>
               <p className="text-gray-400 mb-4">Premium daily use products for modern living.</p>
               <div className="text-sm text-gray-400">
-                <p>2532 N Decatur Road</p>
-                <p>Abberly Onyx Apt 1111</p>
-                <p>Atlanta, Georgia 30033</p>
-                <p className="mt-2">furqan1431@gmail.com</p>
+                <p>152 Brownridge Place Whitby Ontario L1P1W3</p>
+                <p className="mt-2">+12899910909</p>
               </div>
             </div>
             <div>
@@ -592,7 +586,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 The Design Scratch LLC. All rights reserved. Registered LLC in Georgia.</p>
+            <p>&copy; 2024  KJ Accounting & Tax Professional Corporation</p>
           </div>
         </div>
       </footer>
