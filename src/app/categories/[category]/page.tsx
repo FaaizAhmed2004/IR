@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Header from "@/components/header"
 import Footer from "@/components/Footer"
-import { ShoppingBag, ArrowLeft, Filter, Grid, List } from "lucide-react"
+import { ShoppingBag, ArrowLeft,  Grid, List } from "lucide-react"
 
 // Mock data for category-specific products
 const categoryData = {
@@ -114,7 +114,7 @@ export default function CategoryPage() {
         <Header />
         <div className="max-w-4xl mx-auto px-4 py-16 text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Category Not Found</h1>
-          <p className="text-lg text-gray-600 mb-8">The category you're looking for doesn't exist.</p>
+          <p className="text-lg text-gray-600 mb-8">The category youre looking for doesnt exist.</p>
           <Link href="/categories">
             <Button className="bg-blue-600 hover:bg-blue-700 text-white">
               <ArrowLeft className="mr-2 h-4 w-4" />
@@ -199,6 +199,7 @@ export default function CategoryPage() {
               <div className="flex items-center gap-2">
                 <label className="text-sm font-medium text-gray-700">Sort by:</label>
                 <select
+                aria-label="sort"
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
                   className="px-3 py-1 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -213,12 +214,14 @@ export default function CategoryPage() {
               {/* View Mode */}
               <div className="flex items-center gap-1 border border-gray-300 rounded-md">
                 <button
+                title="btn"
                   onClick={() => setViewMode("grid")}
                   className={`p-2 ${viewMode === "grid" ? "bg-blue-100 text-blue-600" : "text-gray-600"}`}
                 >
                   <Grid className="h-4 w-4" />
                 </button>
                 <button
+                title="btn2"
                   onClick={() => setViewMode("list")}
                   className={`p-2 ${viewMode === "list" ? "bg-blue-100 text-blue-600" : "text-gray-600"}`}
                 >

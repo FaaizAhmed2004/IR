@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Header from "@/components/header"
 import Footer from "@/components/Footer"
-import { ShoppingBag, Star, Truck, Shield, Phone, Utensils, Heart, Zap } from "lucide-react"
+import { ShoppingBag, Truck, Shield, Phone, Utensils, Heart, Zap } from "lucide-react"
 
 export default function homepage() {
   return (
@@ -14,10 +14,10 @@ export default function homepage() {
       <section className="relative h-[600px] w-full overflow-hidden bg-gradient-to-r from-blue-600 to-blue-800">
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-lg">
-            Quality Products from KJ
+            Express Yourself in Every Thread
           </h1>
           <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl drop-shadow-lg">
-            Professional business solutions and premium products for individuals, small businesses, and corporations across Ontario.
+            Bold apparel that connects emotionally. Designed in Canada, shipped across the U.S. and North America.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
@@ -194,14 +194,12 @@ export default function homepage() {
               Professional Business Solutions
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed">
-              KJ Accounting & Tax Services LLC is committed to providing quality products and professional business solutions. 
-              Our mission is to serve individuals, small businesses, and corporations across Ontario with reliable products 
-              and exceptional service.
+              KJACCO creates apparel that connects emotionally, not just visually. As a family-owned business born in Ontario, 
+              we believe clothing should be personal — it should make you feel something.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              Based in Whitby and serving the greater Ontario area including Oshawa, we take pride in our commitment to 
-              quality, reliability, and customer satisfaction. Our business is built on trust, professionalism, and 
-              delivering value to our customers.
+              We've grown from a small Canadian brand to a trusted online store, delivering our signature designs across 
+              the U.S. and North America. Every design is built with purpose and personality.
             </p>
             <div className="flex flex-wrap gap-4">
               <div className="flex items-center gap-2">
@@ -240,16 +238,16 @@ export default function homepage() {
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Get in Touch</h2>
           <p className="text-lg text-gray-600">
-            Contact KJ Accounting & Tax Services LLC for product inquiries and business solutions.
+            Contact KJACCO for product inquiries and support.
           </p>
         </div>
         <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
           <div className="text-center space-y-4">
-            <h3 className="text-2xl font-semibold text-gray-900">KJ Accounting & Tax Services LLC</h3>
+            <h3 className="text-2xl font-semibold text-gray-900">KJACCO</h3>
             <div className="space-y-2 text-gray-700">
               <p className="font-medium">Khizar Javaid</p>
               <p>152 Brownridge Place</p>
-              <p>Whitby, Ontario L1P1W3</p>
+              <p>Whitby, Ontario L1P 1W3</p>
               <p>
                 Phone:{" "}
                 <a href="tel:+12899910909" className="text-blue-600 hover:underline font-medium">
@@ -257,7 +255,7 @@ export default function homepage() {
                 </a>
               </p>
               <p className="text-sm text-gray-500 mt-4">
-                Serving Oshawa, Whitby, and Ontario
+                support@kjacco.com
               </p>
             </div>
             <Button className="mt-6 bg-blue-600 hover:bg-blue-700 text-white">
