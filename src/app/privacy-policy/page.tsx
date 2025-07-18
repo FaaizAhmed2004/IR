@@ -35,7 +35,7 @@ export default function PrivacyPolicyPage() {
                 <h2 className="text-2xl font-bold text-gray-900">Overview</h2>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                KJ Accounting & Tax Services LLC ("we," "our," or "us") is committed to protecting your privacy. 
+                At KJACCO, we value your privacy and are committed to protecting your personal data. 
                 This Privacy Policy explains how we collect, use, disclose, and safeguard your information when 
                 you visit our website or use our services. We comply with the Personal Information Protection 
                 and Electronic Documents Act (PIPEDA) and other applicable Canadian privacy laws.
@@ -53,10 +53,9 @@ export default function PrivacyPolicyPage() {
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">Personal Information</h3>
                   <p className="text-gray-700 mb-3">We may collect the following personal information:</p>
                   <ul className="list-disc list-inside text-gray-700 space-y-1">
-                    <li>Name and contact information (email, phone, address)</li>
-                    <li>Business information and tax identification numbers</li>
-                    <li>Financial information necessary for our services</li>
-                    <li>Communication preferences and service history</li>
+                    <li>Name, email, address, and order details</li>
+                    <li>Payment info (processed securely via third-party gateways)</li>
+                    <li>Browser/device data for analytics</li>
                   </ul>
                 </div>
 
@@ -83,32 +82,24 @@ export default function PrivacyPolicyPage() {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mt-2" />
                   <div>
-                    <h3 className="font-semibold text-gray-900">Service Delivery</h3>
-                    <p className="text-gray-700">To provide accounting, tax, and business services as requested</p>
+                    <h3 className="font-semibold text-gray-900">Order Processing</h3>
+                    <p className="text-gray-700">To process and fulfill your orders</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-green-600 rounded-full mt-2" />
                   <div>
-                    <h3 className="font-semibold text-gray-900">Communication</h3>
-                    <p className="text-gray-700">To respond to inquiries and provide customer support</p>
+                    <h3 className="font-semibold text-gray-900">Customer Support</h3>
+                    <p className="text-gray-700">To provide customer support</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-purple-600 rounded-full mt-2" />
                   <div>
-                    <h3 className="font-semibold text-gray-900">Legal Compliance</h3>
-                    <p className="text-gray-700">To comply with legal obligations and regulatory requirements</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-orange-600 rounded-full mt-2" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Business Operations</h3>
-                    <p className="text-gray-700">To improve our services and website functionality</p>
+                    <h3 className="font-semibold text-gray-900">Marketing Communications</h3>
+                    <p className="text-gray-700">To send service updates and promotional offers</p>
                   </div>
                 </div>
               </div>

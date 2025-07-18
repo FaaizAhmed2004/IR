@@ -35,15 +35,14 @@ export default function ReturnPolicyPage() {
                 <h2 className="text-2xl font-bold text-gray-900">Our Commitment</h2>
               </div>
               <p className="text-gray-700 leading-relaxed mb-4">
-                At KJ Accounting & Tax Services LLC, your satisfaction is our priority. We stand behind the 
+                At KJACCO, your satisfaction is our priority. We stand behind the 
                 quality of our products and offer a comprehensive return policy to ensure you're completely 
                 happy with your purchase.
               </p>
               <div className="bg-green-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-900 mb-2">30-Day Return Window</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">14-Day Return Window</h3>
                 <p className="text-gray-700 text-sm">
-                  You have 30 days from the date of delivery to return most items for a full refund, 
-                  no questions asked (subject to return conditions below).
+                  Items can be returned within 14 days of delivery, provided they are unworn, unused, and in original condition.
                 </p>
               </div>
             </CardContent>
@@ -92,23 +91,19 @@ export default function ReturnPolicyPage() {
                   <ul className="space-y-2 text-gray-700 text-sm">
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-red-600 rounded-full mt-2" />
-                      <span>Personalized or custom-made items</span>
+                      <span>Gift cards</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-red-600 rounded-full mt-2" />
-                      <span>Perishable goods or consumables</span>
+                      <span>Clearance items</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-red-600 rounded-full mt-2" />
-                      <span>Items damaged by misuse or normal wear</span>
+                      <span>Custom-designed or personalized products</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-red-600 rounded-full mt-2" />
-                      <span>Final sale or clearance items</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 bg-red-600 rounded-full mt-2" />
-                      <span>Items returned after 30 days</span>
+                      <span>Items returned after 14 days</span>
                     </li>
                   </ul>
                 </div>
@@ -175,7 +170,7 @@ export default function ReturnPolicyPage() {
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-2">Processing & Refund</h3>
                       <p className="text-gray-700 text-sm mb-2">
-                        Once we receive and inspect your return, we'll process your refund within 5-10 business days.
+                        After inspection, refunds are processed within 5–7 business days to the original payment method.
                       </p>
                       <div className="text-xs text-gray-600">
                         <strong>Refund method:</strong> Original payment method used for purchase

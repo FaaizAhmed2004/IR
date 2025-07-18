@@ -10,8 +10,26 @@ import Header from "@/components/header"
 import Footer from "@/components/Footer"
 import { ShoppingBag, ArrowLeft, Plus, Minus, Star, Truck, Shield, RotateCcw } from "lucide-react"
 
+// Product type definition
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+  originalPrice?: number; // Make this optional
+  images: string[];
+  category: string;
+  inStock: boolean;
+  stockQuantity: number;
+  rating: number;
+  reviewCount: number;
+  badge: string;
+  description: string;
+  features: string[];
+  specifications: Record<string, string>;
+}
+
 // Mock product data
-const productData = {
+const productData: Record<string, Product> = {
   "1": {
     id: 1,
     name: "Kitchen Essentials Set",
@@ -143,7 +161,7 @@ export default function ProductDetailPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      
+
       {/* Breadcrumb */}
       <section className="bg-white py-4 px-4 md:px-8 lg:px-16 border-b">
         <div className="max-w-6xl mx-auto">
@@ -159,7 +177,7 @@ export default function ProductDetailPage() {
 
       <div className="max-w-6xl mx-auto px-4 md:px-8 lg:px-16 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          
+
           {/* Product Images */}
           <div className="space-y-4">
             <div className="relative aspect-square bg-white rounded-lg overflow-hidden shadow-sm">
@@ -175,16 +193,15 @@ export default function ProductDetailPage() {
                 </div>
               )}
             </div>
-            
+
             {/* Image Thumbnails */}
             <div className="flex gap-2">
               {product.images.map((image, index) => (
                 <button
                   key={index}
                   onClick={() => setSelectedImage(index)}
-                  className={`relative w-20 h-20 rounded-lg overflow-hidden border-2 transition-colors ${
-                    selectedImage === index ? "border-blue-500" : "border-gray-200"
-                  }`}
+                  className={`relative w-20 h-20 rounded-lg overflow-hidden border-2 transition-colors ${selectedImage === index ? "border-blue-500" : "border-gray-200"
+                    }`}
                 >
                   <Image
                     src={image}
@@ -209,7 +226,7 @@ export default function ProductDetailPage() {
                 )}
               </div>
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{product.name}</h1>
-              
+
               {/* Rating */}
               <div className="flex items-center gap-2 mb-4">
                 <div className="flex text-yellow-400">
@@ -272,6 +289,7 @@ export default function ProductDetailPage() {
                 <label className="text-sm font-medium text-gray-700">Quantity:</label>
                 <div className="flex items-center border border-gray-300 rounded-md">
                   <button
+                    title="button2"
                     onClick={() => handleQuantityChange(-1)}
                     disabled={quantity <= 1}
                     className="p-2 hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed"
@@ -280,6 +298,7 @@ export default function ProductDetailPage() {
                   </button>
                   <span className="px-4 py-2 font-medium">{quantity}</span>
                   <button
+                    title="button"
                     onClick={() => handleQuantityChange(1)}
                     disabled={quantity >= product.stockQuantity}
                     className="p-2 hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed"
@@ -290,7 +309,7 @@ export default function ProductDetailPage() {
               </div>
 
               <div className="flex gap-4">
-                <Button 
+                <Button
                   className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3"
                   disabled={!product.inStock}
                 >
@@ -340,7 +359,7 @@ export default function ProductDetailPage() {
                 </button>
               </nav>
             </div>
-            
+
             <div className="p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Product Specifications</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

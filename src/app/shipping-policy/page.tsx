@@ -16,7 +16,7 @@ export default function ShippingPolicyPage() {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Shipping Policy</h1>
           <p className="text-lg text-gray-600">
-            Learn about our shipping options, delivery times, and fulfillment process.
+            Fast, secure shipping from Canada to the U.S. and North America.
           </p>
           <p className="text-sm text-gray-500 mt-4">
             Last updated: January 2025
@@ -27,81 +27,58 @@ export default function ShippingPolicyPage() {
       <div className="max-w-4xl mx-auto px-4 md:px-8 lg:px-16 py-12">
         <div className="space-y-8">
           
-          {/* Overview */}
+          {/* Processing Time */}
           <Card>
             <CardContent className="p-8">
               <div className="flex items-center gap-3 mb-4">
-                <Package className="h-6 w-6 text-blue-600" />
-                <h2 className="text-2xl font-bold text-gray-900">Shipping Overview</h2>
+                <Clock className="h-6 w-6 text-blue-600" />
+                <h2 className="text-2xl font-bold text-gray-900">Processing Time</h2>
               </div>
-              <p className="text-gray-700 leading-relaxed">
-                KJ Accounting & Tax Services LLC is committed to delivering your orders quickly and safely. 
-                We offer multiple shipping options to meet your needs and serve customers primarily in Ontario, 
-                Canada. All orders are processed and shipped from our facility in Whitby, Ontario.
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Orders are processed within 1–3 business days (excluding weekends/holidays).
               </p>
             </CardContent>
           </Card>
 
-          {/* Shipping Options */}
+          {/* Shipping Regions */}
           <Card>
             <CardContent className="p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Shipping Options & Rates</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Shipping Regions</h2>
+              <p className="text-gray-700 mb-4">
+                We currently ship to the United States and select regions across North America.
+              </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-green-50 p-6 rounded-lg text-center">
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Truck className="h-6 w-6 text-green-600" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Standard Shipping</h3>
-                  <div className="text-2xl font-bold text-green-600 mb-2">$9.99</div>
-                  <div className="text-sm text-gray-600 mb-3">FREE on orders over $50</div>
-                  <div className="space-y-1 text-sm text-gray-700">
-                    <p><strong>Delivery:</strong> 5-7 business days</p>
-                    <p><strong>Coverage:</strong> Ontario-wide</p>
-                    <p><strong>Tracking:</strong> Included</p>
-                  </div>
-                </div>
-
-                <div className="bg-blue-50 p-6 rounded-lg text-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-blue-50 p-6 rounded-lg">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Clock className="h-6 w-6 text-blue-600" />
+                    <MapPin className="h-6 w-6 text-blue-600" />
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Express Shipping</h3>
-                  <div className="text-2xl font-bold text-blue-600 mb-2">$19.99</div>
-                  <div className="text-sm text-gray-600 mb-3">Expedited delivery</div>
-                  <div className="space-y-1 text-sm text-gray-700">
-                    <p><strong>Delivery:</strong> 2-3 business days</p>
-                    <p><strong>Coverage:</strong> Major cities</p>
-                    <p><strong>Tracking:</strong> Real-time updates</p>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">USA</h3>
+                  <div className="text-sm text-gray-700 space-y-1">
+                    <p><strong>Timeframe:</strong> 5–9 business days</p>
+                    <p><strong>Carriers:</strong> USPS, UPS, FedEx</p>
+                    <p><strong>Tracking:</strong> Included with all orders</p>
                   </div>
                 </div>
 
-                <div className="bg-purple-50 p-6 rounded-lg text-center">
-                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <MapPin className="h-6 w-6 text-purple-600" />
+                <div className="bg-green-50 p-6 rounded-lg">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <MapPin className="h-6 w-6 text-green-600" />
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Local Delivery</h3>
-                  <div className="text-2xl font-bold text-purple-600 mb-2">$5.99</div>
-                  <div className="text-sm text-gray-600 mb-3">Same/next day available</div>
-                  <div className="space-y-1 text-sm text-gray-700">
-                    <p><strong>Delivery:</strong> Same or next day</p>
-                    <p><strong>Coverage:</strong> Whitby & Oshawa</p>
-                    <p><strong>Tracking:</strong> SMS notifications</p>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Canada</h3>
+                  <div className="text-sm text-gray-700 space-y-1">
+                    <p><strong>Timeframe:</strong> 3–7 business days</p>
+                    <p><strong>Carriers:</strong> Canada Post</p>
+                    <p><strong>Tracking:</strong> Included with all orders</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-6 bg-yellow-50 p-4 rounded-lg">
-                <div className="flex items-start gap-3">
-                  <AlertCircle className="h-5 w-5 text-yellow-600 mt-0.5" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Free Shipping Qualification</h4>
-                    <p className="text-gray-700 text-sm">
-                      Free standard shipping applies to orders totaling $50 or more (before taxes) 
-                      within our standard delivery areas in Ontario.
-                    </p>
-                  </div>
-                </div>
+                <h4 className="font-semibold text-gray-900 mb-2">Shipping Providers</h4>
+                <p className="text-gray-700 text-sm">
+                  We use trusted carriers including Canada Post, USPS, UPS, and FedEx to ensure reliable delivery.
+                </p>
               </div>
             </CardContent>
           </Card>

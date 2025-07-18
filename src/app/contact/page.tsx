@@ -92,7 +92,7 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
           <p className="text-xl text-blue-100">
-            Get in touch with KJ Accounting & Tax Services LLC for product inquiries and business solutions.
+            We're here to help. Reach out with any questions — we'd love to hear from you.
           </p>
         </div>
       </section>
@@ -121,8 +121,8 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 text-green-600 mt-1" />
                     <div>
                       <div className="font-medium text-gray-900">Email</div>
-                      <a href="mailto:info@kjaccounting.ca" className="text-green-600 hover:underline">
-                        info@kjaccounting.ca
+                      <a href="mailto:support@kjacco.com" className="text-green-600 hover:underline">
+                        support@kjacco.com (Launching soon)
                       </a>
                     </div>
                   </div>
