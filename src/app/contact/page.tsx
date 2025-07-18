@@ -32,10 +32,10 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
+
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1000))
-    
+
     setSubmitted(true)
     setIsSubmitting(false)
   }
@@ -44,7 +44,7 @@ export default function ContactPage() {
     return (
       <div className="min-h-screen bg-gray-50">
         <Header />
-        
+
         <div className="max-w-4xl mx-auto px-4 md:px-8 lg:px-16 py-16">
           <div className="text-center">
             <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -55,7 +55,7 @@ export default function ContactPage() {
               Thank you for contacting KJ Accounting & Tax Services LLC. We'll get back to you within 24 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
+              <Button
                 onClick={() => {
                   setSubmitted(false)
                   setFormData({
@@ -86,7 +86,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      
+
       {/* Page Header */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 py-12 px-4 md:px-8 lg:px-16">
         <div className="max-w-4xl mx-auto text-center">
@@ -99,13 +99,13 @@ export default function ContactPage() {
 
       <div className="max-w-6xl mx-auto px-4 md:px-8 lg:px-16 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          
+
           {/* Contact Information */}
           <div className="space-y-6">
             <Card>
               <CardContent className="p-6">
                 <h2 className="text-xl font-semibold text-gray-900 mb-6">Get in Touch</h2>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <Phone className="h-5 w-5 text-blue-600 mt-1" />
@@ -116,17 +116,17 @@ export default function ContactPage() {
                       </a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-3">
                     <Mail className="h-5 w-5 text-green-600 mt-1" />
                     <div>
                       <div className="font-medium text-gray-900">Email</div>
                       <a href="mailto:support@kjacco.com" className="text-green-600 hover:underline">
-                        support@kjacco.com (Launching soon)
+                        support@kjacco.com
                       </a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-3">
                     <MapPin className="h-5 w-5 text-purple-600 mt-1" />
                     <div>
@@ -138,7 +138,7 @@ export default function ContactPage() {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-3">
                     <Clock className="h-5 w-5 text-orange-600 mt-1" />
                     <div>
@@ -205,7 +205,7 @@ export default function ContactPage() {
             <Card>
               <CardContent className="p-8">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-6">Send us a Message</h2>
-                
+
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
@@ -223,7 +223,7 @@ export default function ContactPage() {
                         placeholder="Your full name"
                       />
                     </div>
-                    
+
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                         Email Address *
@@ -256,7 +256,7 @@ export default function ContactPage() {
                         placeholder="(123) 456-7890"
                       />
                     </div>
-                    
+
                     <div>
                       <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
                         Subject *
@@ -347,7 +347,7 @@ export default function ContactPage() {
                         </>
                       )}
                     </Button>
-                    
+
                     <p className="text-sm text-gray-500">
                       We'll respond within 24 hours
                     </p>
@@ -382,37 +382,37 @@ export default function ContactPage() {
               <CardContent className="p-6">
                 <h3 className="font-semibold text-gray-900 mb-2">What are your response times?</h3>
                 <p className="text-gray-600 text-sm">
-                  We typically respond to all inquiries within 24 hours during business days. 
+                  We typically respond to all inquiries within 24 hours during business days.
                   Urgent matters are prioritized and may receive faster responses.
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-gray-900 mb-2">Do you offer bulk pricing?</h3>
                 <p className="text-gray-600 text-sm">
-                  Yes, we offer competitive bulk pricing for wholesale orders. 
+                  Yes, we offer competitive bulk pricing for wholesale orders.
                   Contact us with your requirements for a custom quote.
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-gray-900 mb-2">What payment methods do you accept?</h3>
                 <p className="text-gray-600 text-sm">
-                  We accept various payment methods including credit cards, bank transfers, 
+                  We accept various payment methods including credit cards, bank transfers,
                   and business checks for qualified accounts.
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-gray-900 mb-2">Do you ship outside Ontario?</h3>
                 <p className="text-gray-600 text-sm">
-                  Our primary service area is Ontario, but we can arrange shipping to other 
+                  Our primary service area is Ontario, but we can arrange shipping to other
                   provinces for specific products. Contact us for details.
                 </p>
               </CardContent>
