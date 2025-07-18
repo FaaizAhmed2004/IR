@@ -58,12 +58,11 @@ export default function AboutPage() {
               <p>Whitby, Ontario, Canada</p>
               <p>Postal Code: L1P 1W3</p>
               <p><strong>Phone:</strong> +1 (289) 991-0909</p>
-              <p><strong>Email:</strong> support@kjacco.com (Launching soon)</p>
+              <p><strong>Email:</strong> support@kjacco.com</p>
             </div>
           </div>
         </div>
       </div>
-
       <Footer />
     </div>
   )

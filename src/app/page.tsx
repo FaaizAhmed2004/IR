@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Header from "@/components/header"
@@ -7,9 +8,10 @@ import { ShoppingBag, Truck, Shield, Phone, Utensils, Heart, Zap } from "lucide-
 
 export default function homepage() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800">
+    <div className="min-h-screen bg-gray-50 text-gray-800 flex flex-col">
       <Header />
       
+      <main className="flex-1">
       {/* Hero Section */}
       <section className="relative h-[600px] w-full overflow-hidden bg-gradient-to-r from-blue-600 to-blue-800">
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
@@ -20,18 +22,22 @@ export default function homepage() {
             Bold apparel that connects emotionally. Designed in Canada, shipped across the U.S. and North America.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button
-              className="bg-white text-blue-600 hover:bg-blue-50 transition-colors duration-300 px-8 py-6 text-lg font-semibold"
-            >
-              <ShoppingBag className="mr-2 h-5 w-5" />
-              Shop Now
-            </Button>
-            <Button
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-blue-600 transition-colors duration-300 px-8 py-6 text-lg bg-transparent"
-            >
-              Learn More
-            </Button>
+            <Link href="/products">
+              <Button
+                className="bg-white text-blue-600 hover:bg-blue-50 transition-colors duration-300 px-8 py-6 text-lg font-semibold"
+              >
+                <ShoppingBag className="mr-2 h-5 w-5" />
+                Shop Now
+              </Button>
+            </Link>
+            <Link href="/about">
+              <Button
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-blue-600 transition-colors duration-300 px-8 py-6 text-lg bg-transparent"
+              >
+                Learn More
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -147,7 +153,9 @@ export default function homepage() {
               </div>
               <h3 className="text-lg font-semibold mb-2">Kitchen & Home</h3>
               <p className="text-gray-600 text-sm mb-4">Essential tools and accessories for modern living</p>
-              <Button variant="outline" size="sm" className="w-full">Browse Category</Button>
+              <Link href="/categories">
+                <Button variant="outline" size="sm" className="w-full">Browse Category</Button>
+              </Link>
             </CardContent>
           </Card>
           
@@ -158,7 +166,9 @@ export default function homepage() {
               </div>
               <h3 className="text-lg font-semibold mb-2">Health & Beauty</h3>
               <p className="text-gray-600 text-sm mb-4">Premium wellness and personal care products</p>
-              <Button variant="outline" size="sm" className="w-full">Browse Category</Button>
+              <Link href="/categories">
+                <Button variant="outline" size="sm" className="w-full">Browse Category</Button>
+              </Link>
             </CardContent>
           </Card>
           
@@ -169,7 +179,9 @@ export default function homepage() {
               </div>
               <h3 className="text-lg font-semibold mb-2">Electronics</h3>
               <p className="text-gray-600 text-sm mb-4">Tech accessories and power solutions</p>
-              <Button variant="outline" size="sm" className="w-full">Browse Category</Button>
+              <Link href="/categories">
+                <Button variant="outline" size="sm" className="w-full">Browse Category</Button>
+              </Link>
             </CardContent>
           </Card>
           
@@ -180,7 +192,9 @@ export default function homepage() {
               </div>
               <h3 className="text-lg font-semibold mb-2">Business Essentials</h3>
               <p className="text-gray-600 text-sm mb-4">Professional products for business operations</p>
-              <Button variant="outline" size="sm" className="w-full">Browse Category</Button>
+              <Link href="/categories">
+                <Button variant="outline" size="sm" className="w-full">Browse Category</Button>
+              </Link>
             </CardContent>
           </Card>
         </div>
@@ -225,9 +239,11 @@ export default function homepage() {
               <p className="text-gray-600 mb-6">
                 Explore our product catalog and discover quality solutions for your needs.
               </p>
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
-                Browse Products
-              </Button>
+              <Link href="/products">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+                  Browse Products
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -258,12 +274,15 @@ export default function homepage() {
                 support@kjacco.com
               </p>
             </div>
-            <Button className="mt-6 bg-blue-600 hover:bg-blue-700 text-white">
-              Contact Us Today
-            </Button>
+            <Link href="/contact">
+              <Button className="mt-6 bg-blue-600 hover:bg-blue-700 text-white">
+                Contact Us Today
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>
