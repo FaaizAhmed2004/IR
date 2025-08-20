@@ -1,10 +1,10 @@
-# KJ Accounting & Tax Services LLC - Business Website
+# THETDSSTORE LLC - IRS Department of Treasury Website
 
-This is the official website for KJ Accounting & Tax Services LLC, built with [Next.js](https://nextjs.org) and modern web technologies.
+This is the official website for THETDSSTORE LLC, providing IRS Department of Treasury services, built with [Next.js](https://nextjs.org) and modern web technologies.
 
 ## About
 
-KJ Accounting & Tax Services LLC provides professional business solutions and quality products to individuals, small businesses, and corporations across Ontario. Based in Whitby, we serve the greater Ontario area including Oshawa.
+THETDSSTORE LLC provides official IRS Department of Treasury services and professional tax solutions to individuals, small businesses, and corporations. Based in Decatur, Georgia, we serve clients with government-certified treasury services.
 
 ## Getting Started
 
@@ -24,20 +24,20 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Features
 
-- Professional business website design
-- Product catalog and e-commerce functionality
+- Professional government services website design
+- Treasury services catalog and information
 - Responsive design for mobile and desktop
 - Contact forms and business information
 - Legal compliance pages
-- SEO optimized
+- SEO optimized for government services
 
 ## Business Information
 
-- **Company**: KJ Accounting & Tax Services LLC
-- **Contact**: Khizar Javaid
-- **Address**: 152 Brownridge Place, Whitby, Ontario L1P1W3
-- **Phone**: +1 (289) 991-0909
-- **Service Areas**: Oshawa, Whitby, Ontario
+- **Company**: THETDSSTORE LLC
+- **Contact**: FARHAN SULTAN MBR
+- **Address**: 2550 BLACKMON DR, DECATUR, GA 30033
+- **IRS Office**: INTERNAL REVENUE SERVICE, CINCINNATI OH 45999-0023
+- **Service Areas**: Decatur, Georgia and nationwide treasury services
 
 ## Technology Stack
 

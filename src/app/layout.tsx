@@ -7,26 +7,26 @@ import { CartProvider } from "@/contexts/CartContext"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "KJ Accounting & Tax Services LLC - Professional Business Solutions",
+  title: "THETDSSTORE LLC - IRS Department of Treasury Services",
   description:
-    "Professional business solutions and quality products from KJ Accounting & Tax Services LLC. Serving Oshawa, Whitby, and Ontario with reliable products and exceptional service.",
+    "Official IRS Department of Treasury services and solutions provided by THETDSSTORE LLC. Professional tax and treasury services in Decatur, GA.",
   keywords:
-    "business products, professional solutions, quality goods, business services, Oshawa, Whitby, Ontario, KJ Accounting Tax Services LLC",
-  authors: [{ name: "KJ Accounting & Tax Services LLC" }],
-  creator: "KJ Accounting & Tax Services LLC",
-  publisher: "KJ Accounting & Tax Services LLC",
+    "IRS, Department of Treasury, tax services, treasury solutions, government services, Decatur, Georgia, THETDSSTORE LLC",
+  authors: [{ name: "THETDSSTORE LLC" }],
+  creator: "THETDSSTORE LLC",
+  publisher: "THETDSSTORE LLC",
   robots: "index, follow",
   openGraph: {
-    title: "KJ - Quality Products & Professional Solutions",
-    description: "Professional business solutions and quality products. Serving Oshawa, Whitby, and Ontario.",
+    title: "THETDSSTORE LLC - IRS Treasury Services",
+    description: "Official IRS Department of Treasury services and solutions. Professional tax and treasury services.",
     type: "website",
     locale: "en_US",
-    siteName: "KJ",
+    siteName: "THETDSSTORE LLC",
   },
   twitter: {
     card: "summary_large_image",
-    title: "KJ - Quality Products & Professional Solutions",
-    description: "Professional business solutions and quality products. Serving Oshawa, Whitby, and Ontario.",
+    title: "THETDSSTORE LLC - IRS Treasury Services",
+    description: "Official IRS Department of Treasury services and solutions. Professional tax and treasury services.",
   },
 }
 

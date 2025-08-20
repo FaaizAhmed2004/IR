@@ -8,32 +8,32 @@ import { ShoppingBag, Truck, Shield, Phone, Utensils, Heart, Zap } from "lucide-
 
 export default function homepage() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 flex flex-col">
+    <div className="min-h-screen bg-green-50 text-gray-800 flex flex-col">
       <Header />
       
       <main className="flex-1">
       {/* Hero Section */}
-      <section className="relative h-[600px] w-full overflow-hidden bg-gradient-to-r from-blue-600 to-blue-800">
+      <section className="relative h-[600px] w-full overflow-hidden bg-gradient-to-r from-green-700 to-green-900">
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-lg">
-            Express Yourself in Every Thread
+            IRS Department of Treasury
           </h1>
-          <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl drop-shadow-lg">
-            Bold apparel that connects emotionally. Designed in Canada, shipped across the U.S. and North America.
+          <p className="text-lg md:text-xl text-green-100 mb-8 max-w-2xl drop-shadow-lg">
+            Official treasury services and tax solutions provided by THETDSSTORE LLC. Professional government services in Decatur, Georgia.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/products">
               <Button
-                className="bg-white text-blue-600 hover:bg-blue-50 transition-colors duration-300 px-8 py-6 text-lg font-semibold"
+                className="bg-white text-green-700 hover:bg-green-50 transition-colors duration-300 px-8 py-6 text-lg font-semibold"
               >
                 <ShoppingBag className="mr-2 h-5 w-5" />
-                Shop Now
+                View Services
               </Button>
             </Link>
             <Link href="/about">
               <Button
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-600 transition-colors duration-300 px-8 py-6 text-lg bg-transparent"
+                className="border-white text-white hover:bg-white hover:text-green-700 transition-colors duration-300 px-8 py-6 text-lg bg-transparent"
               >
                 Learn More
               </Button>
@@ -42,36 +42,36 @@ export default function homepage() {
         </div>
       </section>
 
-      {/* Featured Products Section */}
+      {/* Featured Services Section */}
       <section className="py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Featured Products</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Featured Services</h2>
           <p className="text-lg text-gray-600">
-            Discover our top-selling products carefully selected for quality, value, and customer satisfaction.
+            Discover our comprehensive treasury and tax services designed for professional government compliance.
           </p>
         </div>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Card className="group hover:shadow-lg transition-shadow duration-300">
             <CardContent className="p-0">
-              <div className="relative h-48 bg-gradient-to-br from-orange-100 to-orange-200">
+              <div className="relative h-48 bg-gradient-to-br from-green-100 to-green-200">
                 <Image
                   src="/kitchen_essentials.jpeg"
-                  alt="Kitchen Essentials Collection"
+                  alt="Treasury Services Collection"
                   fill
                   className="object-cover rounded-t-lg"
                 />
-                <div className="absolute top-2 right-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-semibold">
+                <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 rounded text-xs font-semibold">
                   FEATURED
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Kitchen Essentials</h3>
-                <p className="text-gray-600 mb-4">Premium kitchen tools and accessories for home and professional use.</p>
+                <h3 className="text-xl font-semibold mb-2">Treasury Services</h3>
+                <p className="text-gray-600 mb-4">Professional treasury and tax compliance services for individuals and businesses.</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-gray-900">$29.99</span>
-                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                  <span className="text-2xl font-bold text-gray-900">Contact</span>
+                  <Button className="bg-green-700 hover:bg-green-800 text-white">
                     <ShoppingBag className="mr-2 h-4 w-4" />
-                    Add to Cart
+                    Learn More
                   </Button>
                 </div>
               </div>
@@ -80,28 +80,27 @@ export default function homepage() {
           
           <Card className="group hover:shadow-lg transition-shadow duration-300">
             <CardContent className="p-0">
-              <div className="relative h-48 bg-gradient-to-br from-pink-100 to-pink-200">
+              <div className="relative h-48 bg-gradient-to-br from-green-100 to-green-200">
                 <Image
                   src="/skincare.jpeg"
-                  alt="Premium Skincare Products"
+                  alt="Tax Compliance Services"
                   fill
                   className="object-cover rounded-t-lg"
                 />
-                <div className="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-semibold">
-                  SALE
+                <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 rounded text-xs font-semibold">
+                  AVAILABLE
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Skincare Collection</h3>
-                <p className="text-gray-600 mb-4">Professional-grade skincare products for daily wellness routines.</p>
+                <h3 className="text-xl font-semibold mb-2">Tax Compliance</h3>
+                <p className="text-gray-600 mb-4">Comprehensive tax compliance and filing services for all business types.</p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <span className="text-2xl font-bold text-gray-900">$24.99</span>
-                    <span className="text-sm text-gray-500 line-through">$34.99</span>
+                    <span className="text-2xl font-bold text-gray-900">Available</span>
                   </div>
-                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                  <Button className="bg-green-700 hover:bg-green-800 text-white">
                     <ShoppingBag className="mr-2 h-4 w-4" />
-                    Add to Cart
+                    Learn More
                   </Button>
                 </div>
               </div>
@@ -110,25 +109,25 @@ export default function homepage() {
           
           <Card className="group hover:shadow-lg transition-shadow duration-300">
             <CardContent className="p-0">
-              <div className="relative h-48 bg-gradient-to-br from-blue-100 to-blue-200">
+              <div className="relative h-48 bg-gradient-to-br from-green-100 to-green-200">
                 <Image
                   src="/powerbank.jpg"
-                  alt="Portable Power Solutions"
+                  alt="Government Solutions"
                   fill
                   className="object-cover rounded-t-lg"
                 />
-                <div className="absolute top-2 right-2 bg-blue-500 text-white px-2 py-1 rounded text-xs font-semibold">
-                  NEW
+                <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 rounded text-xs font-semibold">
+                  CERTIFIED
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Power Solutions</h3>
-                <p className="text-gray-600 mb-4">Reliable portable power banks and charging accessories for business.</p>
+                <h3 className="text-xl font-semibold mb-2">Government Solutions</h3>
+                <p className="text-gray-600 mb-4">Official government compliance and regulatory services for businesses.</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-gray-900">$39.99</span>
-                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                  <span className="text-2xl font-bold text-gray-900">Contact</span>
+                  <Button className="bg-green-700 hover:bg-green-800 text-white">
                     <ShoppingBag className="mr-2 h-4 w-4" />
-                    Add to Cart
+                    Learn More
                   </Button>
                 </div>
               </div>
@@ -140,47 +139,47 @@ export default function homepage() {
       {/* Product Categories Section */}
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-white">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Shop by Category</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Service Categories</h2>
           <p className="text-lg text-gray-600">
-            Browse our organized product categories to find exactly what you need for your personal and business requirements.
+            Browse our organized service categories to find exactly what you need for your treasury and tax requirements.
           </p>
         </div>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <Card className="group hover:shadow-lg transition-shadow duration-300 cursor-pointer">
             <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Utensils className="h-8 w-8 text-orange-600" />
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Utensils className="h-8 w-8 text-green-700" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Kitchen & Home</h3>
-              <p className="text-gray-600 text-sm mb-4">Essential tools and accessories for modern living</p>
+              <h3 className="text-lg font-semibold mb-2">Tax Filing</h3>
+              <p className="text-gray-600 text-sm mb-4">Professional tax filing and preparation services</p>
               <Link href="/categories">
-                <Button variant="outline" size="sm" className="w-full">Browse Category</Button>
+                <Button variant="outline" size="sm" className="w-full border-green-700 text-green-700 hover:bg-green-700 hover:text-white">Browse Services</Button>
               </Link>
             </CardContent>
           </Card>
           
           <Card className="group hover:shadow-lg transition-shadow duration-300 cursor-pointer">
             <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Heart className="h-8 w-8 text-pink-600" />
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Heart className="h-8 w-8 text-green-700" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Health & Beauty</h3>
-              <p className="text-gray-600 text-sm mb-4">Premium wellness and personal care products</p>
+              <h3 className="text-lg font-semibold mb-2">Treasury Services</h3>
+              <p className="text-gray-600 text-sm mb-4">Comprehensive treasury and financial compliance services</p>
               <Link href="/categories">
-                <Button variant="outline" size="sm" className="w-full">Browse Category</Button>
+                <Button variant="outline" size="sm" className="w-full border-green-700 text-green-700 hover:bg-green-700 hover:text-white">Browse Services</Button>
               </Link>
             </CardContent>
           </Card>
           
           <Card className="group hover:shadow-lg transition-shadow duration-300 cursor-pointer">
             <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Zap className="h-8 w-8 text-blue-600" />
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Zap className="h-8 w-8 text-green-700" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Electronics</h3>
-              <p className="text-gray-600 text-sm mb-4">Tech accessories and power solutions</p>
+              <h3 className="text-lg font-semibold mb-2">Compliance</h3>
+              <p className="text-gray-600 text-sm mb-4">Government compliance and regulatory assistance</p>
               <Link href="/categories">
-                <Button variant="outline" size="sm" className="w-full">Browse Category</Button>
+                <Button variant="outline" size="sm" className="w-full border-green-700 text-green-700 hover:bg-green-700 hover:text-white">Browse Services</Button>
               </Link>
             </CardContent>
           </Card>
@@ -190,58 +189,58 @@ export default function homepage() {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <ShoppingBag className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Business Essentials</h3>
-              <p className="text-gray-600 text-sm mb-4">Professional products for business operations</p>
+              <h3 className="text-lg font-semibold mb-2">Business Services</h3>
+              <p className="text-gray-600 text-sm mb-4">Professional business tax and treasury operations</p>
               <Link href="/categories">
-                <Button variant="outline" size="sm" className="w-full">Browse Category</Button>
+                <Button variant="outline" size="sm" className="w-full border-green-700 text-green-700 hover:bg-green-700 hover:text-white">Browse Services</Button>
               </Link>
             </CardContent>
           </Card>
         </div>
       </section>
 
-      {/* About Our Business Section */}
+      {/* About Our Services Section */}
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold leading-tight text-gray-900">
-              Professional Business Solutions
+              IRS Department of Treasury Services
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed">
-              KJACCO creates apparel that connects emotionally, not just visually. As a family-owned business born in Ontario, 
-              we believe clothing should be personal — it should make you feel something.
+              THETDSSTORE LLC provides official IRS Department of Treasury services with professional expertise 
+              and government compliance. Based in Decatur, Georgia, we serve clients with reliable treasury solutions.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              We've grown from a small Canadian brand to a trusted online store, delivering our signature designs across 
-              the U.S. and North America. Every design is built with purpose and personality.
+              Our services are designed to meet the highest standards of government compliance and professional 
+              excellence. We provide comprehensive treasury and tax services for individuals and businesses.
             </p>
             <div className="flex flex-wrap gap-4">
               <div className="flex items-center gap-2">
-                <Truck className="h-5 w-5 text-blue-600" />
-                <span className="text-sm font-medium">Fast Shipping</span>
+                <Truck className="h-5 w-5 text-green-700" />
+                <span className="text-sm font-medium">Fast Processing</span>
               </div>
               <div className="flex items-center gap-2">
                 <Shield className="h-5 w-5 text-green-600" />
-                <span className="text-sm font-medium">Quality Guaranteed</span>
+                <span className="text-sm font-medium">Government Certified</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="h-5 w-5 text-purple-600" />
+                <Phone className="h-5 w-5 text-green-800" />
                 <span className="text-sm font-medium">Professional Support</span>
               </div>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-lg">
+          <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-lg">
             <div className="text-center">
-              <div className="w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-24 h-24 bg-green-700 rounded-full flex items-center justify-center mx-auto mb-6">
                 <ShoppingBag className="h-12 w-12 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Get Started?</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Need Treasury Services?</h3>
               <p className="text-gray-600 mb-6">
-                Explore our product catalog and discover quality solutions for your needs.
+                Contact us for professional IRS Department of Treasury services and solutions.
               </p>
               <Link href="/products">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
-                  Browse Products
+                <Button className="bg-green-700 hover:bg-green-800 text-white px-8 py-3">
+                  View Services
                 </Button>
               </Link>
             </div>
@@ -250,32 +249,32 @@ export default function homepage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-100">
+      <section className="py-16 px-4 md:px-8 lg:px-16 bg-green-100">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Get in Touch</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Contact Information</h2>
           <p className="text-lg text-gray-600">
-            Contact KJACCO for product inquiries and support.
+            Contact THETDSSTORE LLC for IRS Department of Treasury services and support.
           </p>
         </div>
         <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
           <div className="text-center space-y-4">
-            <h3 className="text-2xl font-semibold text-gray-900">KJACCO</h3>
-            <div className="space-y-2 text-gray-700">
-              <p className="font-medium">Khizar Javaid</p>
-              <p>152 Brownridge Place</p>
-              <p>Whitby, Ontario L1P 1W3</p>
-              <p>
-                Phone:{" "}
-                <a href="tel:+12899910909" className="text-blue-600 hover:underline font-medium">
-                  +1 (289) 991-0909
+            <h3 className="text-2xl font-semibold text-gray-900">IRS DEPARTMENT OF THE TREASURY</h3>
+            <h4 className="text-xl font-medium text-gray-800">INTERNAL REVENUE SERVICE</h4>
+            <p className="text-lg text-gray-700">CINCINNATI OH 45999-0023</p>
+            <div className="space-y-2 text-gray-700 mt-6">
+              <h5 className="text-lg font-semibold">THETDSSTORE LLC</h5>
+              <p className="font-medium">FARHAN SULTAN MBR</p>
+              <p>2550 BLACKMON DR</p>
+              <p>DECATUR, GA 30033</p>
+              <p className="mt-3">
+                Email:{" "}
+                <a href="mailto:info@IRS.com" className="text-green-700 hover:underline font-medium">
+                  info@IRS.com
                 </a>
-              </p>
-              <p className="text-sm text-gray-500 mt-4">
-                support@kjacco.com
               </p>
             </div>
             <Link href="/contact">
-              <Button className="mt-6 bg-blue-600 hover:bg-blue-700 text-white">
+              <Button className="mt-6 bg-green-700 hover:bg-green-800 text-white">
                 Contact Us Today
               </Button>
             </Link>

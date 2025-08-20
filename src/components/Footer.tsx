@@ -9,45 +9,52 @@ export default function Footer() {
           {/* Left Side - Business Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <Building2 className="h-6 w-6 text-blue-400" />
-              <span className="text-lg font-semibold">KJACCO</span>
+              <Building2 className="h-6 w-6 text-green-400" />
+              <span className="text-lg font-semibold">THETDSSTORE LLC</span>
             </div>
             <div className="space-y-2 text-sm">
-              <p className="text-gray-400">© 2023–2025 | Canada-Based</p>
+              <p className="text-gray-400">© 2023–2025 | IRS Department of Treasury</p>
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-gray-400 mt-0.5" />
-                <span>152 Brownridge Place, Whitby, ON L1P 1W3</span>
+                <div>
+                  <p>IRS INTERNAL REVENUE SERVICE</p>
+                  <p>CINCINNATI OH 45999-0023</p>
+                </div>
               </div>
-              <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-gray-400" />
-                <a href="tel:+12899910909" className="hover:text-white">+1 (289) 991-0909</a>
+              <div className="flex items-start gap-2 mt-3">
+                <MapPin className="h-4 w-4 text-gray-400 mt-0.5" />
+                <div>
+                  <p>FARHAN SULTAN MBR</p>
+                  <p>2550 BLACKMON DR</p>
+                  <p>DECATUR, GA 30033</p>
+                </div>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-gray-400" />
-                <span>support@kjacco.com</span>
+                <a href="mailto:info@IRS.com" className="hover:text-white">info@IRS.com</a>
               </div>
             </div>
           </div>
 
           {/* Center - Trust Signals */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Why Choose Us</h3>
+            <h3 className="text-lg font-semibold">Treasury Services</h3>
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2">
                 <span className="text-green-400">✅</span>
-                <span>Secure Checkout</span>
+                <span>Government Certified</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-blue-400">🚚</span>
-                <span>Ships from Canada to U.S.</span>
+                <span className="text-green-400">🏛️</span>
+                <span>Official IRS Services</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-purple-400">🔁</span>
-                <span>Hassle-Free Returns</span>
+                <span className="text-green-400">📋</span>
+                <span>Professional Tax Solutions</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-orange-400">🔒</span>
-                <span>Privacy Protected</span>
+                <span className="text-green-400">🔒</span>
+                <span>Secure & Compliant</span>
               </div>
             </div>
           </div>
@@ -81,7 +88,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-6 text-center">
           <p className="text-sm text-gray-400">
-            Designed in Canada, shipped across North America. Express yourself in every thread.
+            Official IRS Department of Treasury services provided by THETDSSTORE LLC. Professional tax and treasury solutions.
           </p>
         </div>
       </div>
