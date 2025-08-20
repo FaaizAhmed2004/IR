@@ -52,7 +52,7 @@ export default function ContactPage() {
             </div>
             <h1 className="text-3xl font-bold text-gray-900 mb-4">Message Sent Successfully!</h1>
             <p className="text-lg text-gray-600 mb-8">
-              Thank you for contacting KJ Accounting & Tax Services LLC. We'll get back to you within 24 hours.
+              Thank you for contacting THETDSSTORE LLC. We'll get back to you within 24 hours regarding your treasury service inquiry.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -67,7 +67,7 @@ export default function ContactPage() {
                     includeCart: false
                   })
                 }}
-                className="bg-blue-600 hover:bg-blue-700 text-white"
+                className="bg-green-700 hover:bg-green-800 text-white"
               >
                 Send Another Message
               </Button>
@@ -84,15 +84,15 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-900">
       <Header />
 
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 py-12 px-4 md:px-8 lg:px-16">
+      <section className="bg-gradient-to-r from-green-800 to-black py-12 px-4 md:px-8 lg:px-16">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
-          <p className="text-xl text-blue-100">
-            We're here to help. Reach out with any questions — we'd love to hear from you.
+          <p className="text-xl text-gray-200">
+            Contact THETDSSTORE LLC for professional IRS Department of Treasury services and support.
           </p>
         </div>
       </section>
@@ -102,50 +102,51 @@ export default function ContactPage() {
 
           {/* Contact Information */}
           <div className="space-y-6">
-            <Card>
+            <Card className="bg-gray-800 border-gray-700">
               <CardContent className="p-6">
-                <h2 className="text-xl font-semibold text-gray-900 mb-6">Get in Touch</h2>
+                <h2 className="text-xl font-semibold text-white mb-6">Get in Touch</h2>
 
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <Phone className="h-5 w-5 text-blue-600 mt-1" />
-                    <div>
-                      <div className="font-medium text-gray-900">Phone</div>
-                      <a href="tel:+12899910909" className="text-blue-600 hover:underline">
-                        +1 (289) 991-0909
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
                     <Mail className="h-5 w-5 text-green-600 mt-1" />
                     <div>
-                      <div className="font-medium text-gray-900">Email</div>
-                      <a href="mailto:support@kjacco.com" className="text-green-600 hover:underline">
-                        support@kjacco.com
+                      <div className="font-medium text-white">Email</div>
+                      <a href="mailto:info@IRS.com" className="text-green-400 hover:underline">
+                        info@IRS.com
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <MapPin className="h-5 w-5 text-purple-600 mt-1" />
+                    <MapPin className="h-5 w-5 text-green-700 mt-1" />
                     <div>
-                      <div className="font-medium text-gray-900">Address</div>
-                      <div className="text-gray-600">
-                        152 Brownridge Place<br />
-                        Whitby, Ontario L1P1W3<br />
-                        Canada
+                      <div className="font-medium text-white">IRS Department of Treasury</div>
+                      <div className="text-gray-300">
+                        Internal Revenue Service<br />
+                        Cincinnati, OH 45999-0023
                       </div>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <Clock className="h-5 w-5 text-orange-600 mt-1" />
+                    <MapPin className="h-5 w-5 text-green-800 mt-1" />
                     <div>
-                      <div className="font-medium text-gray-900">Business Hours</div>
-                      <div className="text-gray-600 text-sm">
-                        Monday - Friday: 9:00 AM - 6:00 PM<br />
-                        Saturday: 10:00 AM - 4:00 PM<br />
+                      <div className="font-medium text-white">THETDSSTORE LLC</div>
+                      <div className="text-gray-300">
+                        FARHAN SULTAN MBR<br />
+                        2550 BLACKMON DR<br />
+                        DECATUR, GA 30033
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Clock className="h-5 w-5 text-green-600 mt-1" />
+                    <div>
+                      <div className="font-medium text-white">Service Hours</div>
+                      <div className="text-gray-300 text-sm">
+                        Monday - Friday: 8:00 AM - 5:00 PM<br />
+                        Saturday: By Appointment<br />
                         Sunday: Closed
                       </div>
                     </div>
@@ -160,20 +161,20 @@ export default function ContactPage() {
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Service Areas</h3>
                 <div className="space-y-2 text-sm">
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full" />
-                    <span>Whitby, Ontario (Headquarters)</span>
+                    <div className="w-2 h-2 bg-green-700 rounded-full" />
+                    <span>Decatur, Georgia (Headquarters)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-green-600 rounded-full" />
-                    <span>Oshawa, Ontario</span>
+                    <span>Greater Atlanta Area</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-purple-600 rounded-full" />
-                    <span>Greater Ontario Area</span>
+                    <div className="w-2 h-2 bg-green-800 rounded-full" />
+                    <span>Nationwide Treasury Services</span>
                   </div>
                 </div>
                 <p className="text-xs text-gray-500 mt-3">
-                  We provide services and product delivery across Ontario.
+                  We provide IRS Department of Treasury services nationwide.
                 </p>
               </CardContent>
             </Card>
@@ -183,17 +184,13 @@ export default function ContactPage() {
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Contact</h3>
                 <div className="space-y-3">
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white justify-start">
-                    <Phone className="mr-2 h-4 w-4" />
-                    Call Now: (289) 991-0909
-                  </Button>
-                  <Button variant="outline" className="w-full justify-start">
+                  <Button className="w-full bg-green-700 hover:bg-green-800 text-white justify-start">
                     <Mail className="mr-2 h-4 w-4" />
-                    Email Us
+                    Email: info@IRS.com
                   </Button>
-                  <Button variant="outline" className="w-full justify-start">
+                  <Button variant="outline" className="w-full justify-start border-green-700 text-green-700 hover:bg-green-700 hover:text-white">
                     <MessageSquare className="mr-2 h-4 w-4" />
-                    Live Chat
+                    Treasury Services
                   </Button>
                 </div>
               </CardContent>
@@ -267,13 +264,13 @@ export default function ContactPage() {
                         required
                         value={formData.subject}
                         onChange={handleInputChange}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700"
                       >
-                        <option value="general">General Inquiry</option>
-                        <option value="order">Product Order</option>
-                        <option value="support">Customer Support</option>
-                        <option value="wholesale">Wholesale/Bulk Orders</option>
-                        <option value="partnership">Business Partnership</option>
+                        <option value="general">General Treasury Inquiry</option>
+                        <option value="tax">Tax Services</option>
+                        <option value="compliance">Compliance Services</option>
+                        <option value="business">Business Treasury Services</option>
+                        <option value="government">Government Services</option>
                       </select>
                     </div>
                   </div>
@@ -289,8 +286,8 @@ export default function ContactPage() {
                       rows={6}
                       value={formData.message}
                       onChange={handleInputChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder="Please describe your inquiry or requirements..."
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700"
+                      placeholder="Please describe your treasury service inquiry or requirements..."
                     />
                   </div>
 
@@ -333,7 +330,7 @@ export default function ContactPage() {
                     <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3"
+                      className="bg-green-700 hover:bg-green-800 text-white px-8 py-3"
                     >
                       {isSubmitting ? (
                         <>
@@ -367,7 +364,7 @@ export default function ContactPage() {
                   <MapPin className="h-12 w-12 mx-auto mb-2" />
                   <div className="font-medium">Interactive Map</div>
                   <div className="text-sm">Google Maps integration would go here</div>
-                  <div className="text-xs mt-2">152 Brownridge Place, Whitby, Ontario L1P1W3</div>
+                  <div className="text-xs mt-2">2550 BLACKMON DR, DECATUR, GA 30033</div>
                 </div>
               </div>
             </CardContent>
@@ -382,38 +379,38 @@ export default function ContactPage() {
               <CardContent className="p-6">
                 <h3 className="font-semibold text-gray-900 mb-2">What are your response times?</h3>
                 <p className="text-gray-600 text-sm">
-                  We typically respond to all inquiries within 24 hours during business days.
-                  Urgent matters are prioritized and may receive faster responses.
+                  We typically respond to all treasury service inquiries within 24 hours during business days.
+                  Urgent tax matters are prioritized and may receive faster responses.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-semibold text-gray-900 mb-2">Do you offer bulk pricing?</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Do you offer business packages?</h3>
                 <p className="text-gray-600 text-sm">
-                  Yes, we offer competitive bulk pricing for wholesale orders.
-                  Contact us with your requirements for a custom quote.
+                  Yes, we offer comprehensive business treasury service packages.
+                  Contact us with your requirements for a custom service plan.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-semibold text-gray-900 mb-2">What payment methods do you accept?</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">What services do you provide?</h3>
                 <p className="text-gray-600 text-sm">
-                  We accept various payment methods including credit cards, bank transfers,
-                  and business checks for qualified accounts.
+                  We provide comprehensive IRS Department of Treasury services including tax preparation,
+                  compliance services, and government regulatory assistance.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-semibold text-gray-900 mb-2">Do you ship outside Ontario?</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Do you serve clients nationwide?</h3>
                 <p className="text-gray-600 text-sm">
-                  Our primary service area is Ontario, but we can arrange shipping to other
-                  provinces for specific products. Contact us for details.
+                  Yes, our IRS Department of Treasury services are available nationwide.
+                  We serve clients across all states with professional treasury solutions.
                 </p>
               </CardContent>
             </Card>

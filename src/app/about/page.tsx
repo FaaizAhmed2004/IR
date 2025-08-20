@@ -3,62 +3,71 @@ import Footer from "@/components/Footer"
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-900">
       <Header />
 
       <div className="max-w-4xl mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">About KJACCO</h1>
+        <h1 className="text-4xl font-bold text-white mb-8">About THETDSSTORE LLC</h1>
 
         <div className="space-y-8">
-          <div className="bg-white p-8 rounded-lg shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Story</h2>
-            <p className="text-gray-700 mb-4">
-              Founded in 2023, KJACCO was born in Ontario, Canada with one mission: to create apparel that connects emotionally, not just visually. As a family-owned business, we believe clothing should be personal — it should make you feel something.
+          <div className="bg-gray-800 p-8 rounded-lg shadow-sm border border-gray-700">
+            <h2 className="text-2xl font-bold text-white mb-4">Our Mission</h2>
+            <p className="text-gray-300 mb-4">
+              THETDSSTORE LLC is dedicated to providing official IRS Department of Treasury services with the highest standards of professional excellence and government compliance. Based in Decatur, Georgia, we serve individuals and businesses with comprehensive treasury and tax solutions.
             </p>
-            <p className="text-gray-700">
-              Over the past year, we've grown from a small Canadian brand to a trusted online store, delivering our signature designs across the U.S. and North America. Every design is built with purpose and personality — we don't just make clothes, we craft statements.
+            <p className="text-gray-300">
+              Our commitment to accuracy, compliance, and professional service has made us a trusted partner for clients seeking reliable treasury services. We combine government expertise with personalized attention to deliver exceptional results for every client.
             </p>
           </div>
           
-          <div className="bg-white p-8 rounded-lg shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">What Makes Us Different</h2>
+          <div className="bg-gray-800 p-8 rounded-lg shadow-sm border border-gray-700">
+            <h2 className="text-2xl font-bold text-white mb-6">Our Services</h2>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <span className="text-2xl">🎨</span>
+                <span className="text-2xl">🏛️</span>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Emotional Design</h3>
-                  <p className="text-gray-700">We create more than graphics — we design moods.</p>
+                  <h3 className="font-semibold text-white">Official IRS Services</h3>
+                  <p className="text-gray-300">Authorized IRS Department of Treasury services with full government compliance.</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
-                <span className="text-2xl">🇨🇦</span>
+                <span className="text-2xl">📋</span>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Canada-Based, U.S. Focused</h3>
-                  <p className="text-gray-700">Designed and fulfilled from Canada, serving U.S. customers with fast, secure shipping.</p>
+                  <h3 className="font-semibold text-white">Professional Tax Solutions</h3>
+                  <p className="text-gray-300">Comprehensive tax preparation, filing, and compliance services for all business types.</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
-                <span className="text-2xl">🧍</span>
+                <span className="text-2xl">🔒</span>
                 <div>
-                  <h3 className="font-semibold text-gray-900">People-First Approach</h3>
-                  <p className="text-gray-700">We keep our community at the center of every collection.</p>
+                  <h3 className="font-semibold text-white">Secure & Compliant</h3>
+                  <p className="text-gray-300">All services meet the highest standards of government security and regulatory compliance.</p>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="bg-white p-8 rounded-lg shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Business Information</h2>
-            <div className="space-y-2">
-              <p><strong>Business Address:</strong></p>
-              <p>Khizar Javaid</p>
-              <p>152 Brownridge Place</p>
-              <p>Whitby, Ontario, Canada</p>
-              <p>Postal Code: L1P 1W3</p>
-              <p><strong>Phone:</strong> +1 (289) 991-0909</p>
-              <p><strong>Email:</strong> support@kjacco.com</p>
+          <div className="bg-gray-800 p-8 rounded-lg shadow-sm border border-gray-700">
+            <h2 className="text-2xl font-bold text-white mb-4">Contact Information</h2>
+            <div className="space-y-4">
+              <div>
+                <p className="text-white"><strong>IRS Department of the Treasury:</strong></p>
+                <p className="text-gray-300">Internal Revenue Service</p>
+                <p className="text-gray-300">Cincinnati, OH 45999-0023</p>
+              </div>
+              
+              <div>
+                <p className="text-white"><strong>THETDSSTORE LLC:</strong></p>
+                <p className="text-gray-300">FARHAN SULTAN MBR</p>
+                <p className="text-gray-300">2550 BLACKMON DR</p>
+                <p className="text-gray-300">DECATUR, GA 30033</p>
+              </div>
+              
+              <div>
+                <p className="text-white"><strong>Email:</strong> <span className="text-green-400">info@IRS.com</span></p>
+              </div>
             </div>
           </div>
         </div>

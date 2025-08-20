@@ -3,7 +3,7 @@ import { Building2, Phone, Mail, MapPin } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-gray-300 py-12 px-4 md:px-8 lg:px-16">
+    <footer className="bg-black text-gray-300 py-12 px-4 md:px-8 lg:px-16 border-t border-gray-700">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Left Side - Business Info */}

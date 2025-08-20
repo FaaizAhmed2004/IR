@@ -36,8 +36,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>
+    <html lang="en" className="scroll-smooth dark">
+      <body className={`${inter.className} bg-gray-900 text-white`}>
         <CartProvider>
           {children}
         </CartProvider>
