@@ -325,8 +325,8 @@ export default function ShippingPolicyPage() {
                 <h3 className="font-semibold text-gray-900 mb-3">KJ Accounting & Tax Services LLC</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
                   <div>
-                    <p><strong>Phone:</strong> +1 (289) 991-0909</p>
-                    <p><strong>Email:</strong> shipping@kjaccounting.ca</p>
+                    <p><strong>Phone:</strong> +1 (404) 259-0953</p>
+                    <p><strong>Email:</strong> support@thetdsstore.com</p>
                   </div>
                   <div>
                     <p><strong>Hours:</strong> Mon-Fri 9AM-6PM, Sat 10AM-4PM</p>

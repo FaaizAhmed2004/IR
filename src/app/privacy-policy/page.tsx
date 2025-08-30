@@ -244,9 +244,9 @@ export default function PrivacyPolicyPage() {
               <div className="bg-blue-50 p-6 rounded-lg">
                 <h3 className="font-semibold text-gray-900 mb-3">KJ Accounting & Tax Services LLC</h3>
                 <div className="space-y-2 text-gray-700">
-                  <p><strong>Address:</strong> 152 Brownridge Place, Whitby, Ontario L1P1W3</p>
-                  <p><strong>Phone:</strong> +1 (289) 991-0909</p>
-                  <p><strong>Email:</strong> privacy@kjaccounting.ca</p>
+                  <p><strong>Address:</strong> 2550 BLACKMON DR, DECATUR, GA 30033</p>
+                  <p><strong>Phone:</strong> +1 (404) 259-0953</p>
+                  <p><strong>Email:</strong> support@thetdsstore.com</p>
                 </div>
                 <p className="text-sm text-gray-600 mt-4">
                   We will respond to your privacy-related inquiries within 30 days as required by law.

@@ -267,6 +267,12 @@ export default function homepage() {
               <p>2550 BLACKMON DR</p>
               <p>DECATUR, GA 30033</p>
               <p className="mt-3">
+                Phone:{" "}
+                <a href="tel:+14042590953" className="text-blue-600 hover:underline font-medium">
+                  +1 (404) 259-0953
+                </a>
+              </p>
+              <p className="mt-2">
                 Email:{" "}
                 <a href="mailto:support@thetdsstore.com" className="text-blue-600 hover:underline font-medium">
                   support@thetdsstore.com

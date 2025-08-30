@@ -125,7 +125,7 @@ export default function ReturnPolicyPage() {
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-2">Contact Us</h3>
                       <p className="text-gray-700 text-sm mb-2">
-                        Email us at returns@kjaccounting.ca or call +1 (289) 991-0909 to initiate your return.
+                        Email us at support@thetdsstore.com or call +1 (404) 259-0953 to initiate your return.
                       </p>
                       <div className="text-xs text-gray-600">
                         <strong>Include:</strong> Order number, item(s) to return, reason for return
@@ -336,8 +336,8 @@ export default function ReturnPolicyPage() {
                 <div className="bg-blue-50 p-6 rounded-lg">
                   <h3 className="font-semibold text-gray-900 mb-4">Contact Information</h3>
                   <div className="space-y-2 text-gray-700">
-                    <p><strong>Phone:</strong> +1 (289) 991-0909</p>
-                    <p><strong>Email:</strong> returns@kjaccounting.ca</p>
+                    <p><strong>Phone:</strong> +1 (404) 259-0953</p>
+                    <p><strong>Email:</strong> support@thetdsstore.com</p>
                     <p><strong>Hours:</strong> Mon-Fri 9AM-6PM, Sat 10AM-4PM</p>
                   </div>
                 </div>

@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import Header from "@/components/header"
 import Footer from "@/components/Footer"
 import { useCart } from "@/contexts/CartContext"
-import { Mail, MapPin, Clock, Send, MessageSquare, ShoppingBag } from "lucide-react"
+import { Mail, MapPin, Clock, Send, MessageSquare, ShoppingBag, Phone } from "lucide-react"
 
 export default function ContactPage() {
   const { state } = useCart()
@@ -118,6 +118,16 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start gap-3">
+                    <Phone className="h-5 w-5 text-blue-600 mt-1" />
+                    <div>
+                      <div className="font-medium text-gray-900">Phone</div>
+                      <a href="tel:+14042590953" className="text-blue-600 hover:underline">
+                        +1 (404) 259-0953
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
                     <MapPin className="h-5 w-5 text-blue-600 mt-1" />
                     <div>
                       <div className="font-medium text-gray-900">The TDS Store</div>
@@ -174,6 +184,10 @@ export default function ContactPage() {
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Contact</h3>
                 <div className="space-y-3">
                   <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white justify-start">
+                    <Phone className="mr-2 h-4 w-4" />
+                    Call: +1 (404) 259-0953
+                  </Button>
+                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white justify-start">
                     <Mail className="mr-2 h-4 w-4" />
                     Email: support@thetdsstore.com
                   </Button>

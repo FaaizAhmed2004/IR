@@ -66,6 +66,7 @@ export default function AboutPage() {
               </div>
               
               <div>
+                <p className="text-gray-900"><strong>Phone:</strong> <span className="text-blue-600">+1 (404) 259-0953</span></p>
                 <p className="text-gray-900"><strong>Email:</strong> <span className="text-blue-600">support@thetdsstore.com</span></p>
               </div>
             </div>
