@@ -111,9 +111,8 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 text-green-600 mt-1" />
                     <div>
                       <div className="font-medium text-white">Email</div>
-                      <a href="mailto:info@IRS.com" className="text-green-400 hover:underline">
-                        info@IRS.com
-                      </a>
+                      <a href="mailto:support@thetdsstore.com" className="text-green-400 hover:underline">
+                        support@thetdsstore.com                    </a>
                     </div>
                   </div>
 
@@ -186,7 +185,7 @@ export default function ContactPage() {
                 <div className="space-y-3">
                   <Button className="w-full bg-green-700 hover:bg-green-800 text-white justify-start">
                     <Mail className="mr-2 h-4 w-4" />
-                    Email: info@IRS.com
+                    Email: support@thetdsstore.com
                   </Button>
                   <Button variant="outline" className="w-full justify-start border-green-700 text-green-700 hover:bg-green-700 hover:text-white">
                     <MessageSquare className="mr-2 h-4 w-4" />

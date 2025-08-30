@@ -66,7 +66,7 @@ export default function AboutPage() {
               </div>
               
               <div>
-                <p className="text-white"><strong>Email:</strong> <span className="text-green-400">info@IRS.com</span></p>
+                <p className="text-white"><strong>Email:</strong> <span className="text-green-400">support@thetdsstore.com</span></p>
               </div>
             </div>
           </div>

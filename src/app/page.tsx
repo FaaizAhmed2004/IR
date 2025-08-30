@@ -268,9 +268,10 @@ export default function homepage() {
               <p>DECATUR, GA 30033</p>
               <p className="mt-3">
                 Email:{" "}
-                <a href="mailto:info@IRS.com" className="text-green-400 hover:underline font-medium">
-                  info@IRS.com
+                <a href="mailto:support@thetdsstore.com" className="text-green-400 hover:underline font-medium">
+                  support@thetdsstore.com
                 </a>
+
               </p>
             </div>
             <Link href="/contact">
