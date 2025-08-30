@@ -7,26 +7,26 @@ import { CartProvider } from "@/contexts/CartContext"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "THETDSSTORE LLC - IRS Department of Treasury Services",
+  title: "The TDS Store - Premium Products & Services",
   description:
-    "Official IRS Department of Treasury services and solutions provided by THETDSSTORE LLC. Professional tax and treasury services in Decatur, GA.",
+    "Discover premium products and exceptional services at The TDS Store. Quality items and professional solutions in Decatur, GA.",
   keywords:
-    "IRS, Department of Treasury, tax services, treasury solutions, government services, Decatur, Georgia, THETDSSTORE LLC",
-  authors: [{ name: "THETDSSTORE LLC" }],
-  creator: "THETDSSTORE LLC",
-  publisher: "THETDSSTORE LLC",
+    "TDS Store, premium products, quality services, shopping, retail, Decatur, Georgia, online store",
+  authors: [{ name: "The TDS Store" }],
+  creator: "The TDS Store",
+  publisher: "The TDS Store",
   robots: "index, follow",
   openGraph: {
-    title: "THETDSSTORE LLC - IRS Treasury Services",
-    description: "Official IRS Department of Treasury services and solutions. Professional tax and treasury services.",
+    title: "The TDS Store - Premium Products & Services",
+    description: "Discover premium products and exceptional services at The TDS Store. Quality items and professional solutions.",
     type: "website",
     locale: "en_US",
-    siteName: "THETDSSTORE LLC",
+    siteName: "The TDS Store",
   },
   twitter: {
     card: "summary_large_image",
-    title: "THETDSSTORE LLC - IRS Treasury Services",
-    description: "Official IRS Department of Treasury services and solutions. Professional tax and treasury services.",
+    title: "The TDS Store - Premium Products & Services",
+    description: "Discover premium products and exceptional services at The TDS Store. Quality items and professional solutions.",
   },
 }
 
@@ -36,8 +36,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth dark">
-      <body className={`${inter.className} bg-gray-900 text-white`}>
+    <html lang="en" className="scroll-smooth light">
+      <body className={`${inter.className} bg-white text-gray-900`}>
         <CartProvider>
           {children}
         </CartProvider>

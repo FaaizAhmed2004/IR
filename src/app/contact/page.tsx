@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import Header from "@/components/header"
 import Footer from "@/components/Footer"
 import { useCart } from "@/contexts/CartContext"
-import { Phone, Mail, MapPin, Clock, Send, MessageSquare, ShoppingBag } from "lucide-react"
+import { Mail, MapPin, Clock, Send, MessageSquare, ShoppingBag } from "lucide-react"
 
 export default function ContactPage() {
   const { state } = useCart()
@@ -52,7 +52,7 @@ export default function ContactPage() {
             </div>
             <h1 className="text-3xl font-bold text-gray-900 mb-4">Message Sent Successfully!</h1>
             <p className="text-lg text-gray-600 mb-8">
-              Thank you for contacting THETDSSTORE LLC. We'll get back to you within 24 hours regarding your treasury service inquiry.
+              Thank you for contacting The TDS Store. We'll get back to you within 24 hours regarding your inquiry.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -67,7 +67,7 @@ export default function ContactPage() {
                     includeCart: false
                   })
                 }}
-                className="bg-green-700 hover:bg-green-800 text-white"
+                className="bg-blue-600 hover:bg-blue-700 text-white"
               >
                 Send Another Message
               </Button>
@@ -84,15 +84,15 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen bg-white">
       <Header />
 
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-green-800 to-black py-12 px-4 md:px-8 lg:px-16">
+      <section className="bg-gradient-to-r from-blue-600 to-purple-700 py-12 px-4 md:px-8 lg:px-16">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
-          <p className="text-xl text-gray-200">
-            Contact THETDSSTORE LLC for professional IRS Department of Treasury services and support.
+          <p className="text-xl text-blue-100">
+            Contact The TDS Store for premium products and exceptional customer service.
           </p>
         </div>
       </section>
@@ -102,37 +102,27 @@ export default function ContactPage() {
 
           {/* Contact Information */}
           <div className="space-y-6">
-            <Card className="bg-gray-800 border-gray-700">
+            <Card className="bg-white border-gray-200 shadow-sm">
               <CardContent className="p-6">
-                <h2 className="text-xl font-semibold text-white mb-6">Get in Touch</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-6">Get in Touch</h2>
 
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <Mail className="h-5 w-5 text-green-600 mt-1" />
+                    <Mail className="h-5 w-5 text-blue-600 mt-1" />
                     <div>
-                      <div className="font-medium text-white">Email</div>
-                      <a href="mailto:support@thetdsstore.com" className="text-green-400 hover:underline">
-                        support@thetdsstore.com                    </a>
+                      <div className="font-medium text-gray-900">Email</div>
+                      <a href="mailto:support@thetdsstore.com" className="text-blue-600 hover:underline">
+                        support@thetdsstore.com
+                      </a>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <MapPin className="h-5 w-5 text-green-700 mt-1" />
+                    <MapPin className="h-5 w-5 text-blue-600 mt-1" />
                     <div>
-                      <div className="font-medium text-white">IRS Department of Treasury</div>
-                      <div className="text-gray-300">
-                        Internal Revenue Service<br />
-                        Cincinnati, OH 45999-0023
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <MapPin className="h-5 w-5 text-green-800 mt-1" />
-                    <div>
-                      <div className="font-medium text-white">THETDSSTORE LLC</div>
-                      <div className="text-gray-300">
-                        FARHAN SULTAN MBR<br />
+                      <div className="font-medium text-gray-900">The TDS Store</div>
+                      <div className="text-gray-600">
+                        FARHAN SULTAN - Store Manager<br />
                         2550 BLACKMON DR<br />
                         DECATUR, GA 30033
                       </div>
@@ -140,12 +130,12 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <Clock className="h-5 w-5 text-green-600 mt-1" />
+                    <Clock className="h-5 w-5 text-blue-600 mt-1" />
                     <div>
-                      <div className="font-medium text-white">Service Hours</div>
-                      <div className="text-gray-300 text-sm">
-                        Monday - Friday: 8:00 AM - 5:00 PM<br />
-                        Saturday: By Appointment<br />
+                      <div className="font-medium text-gray-900">Store Hours</div>
+                      <div className="text-gray-600 text-sm">
+                        Monday - Friday: 9:00 AM - 6:00 PM<br />
+                        Saturday: 10:00 AM - 4:00 PM<br />
                         Sunday: Closed
                       </div>
                     </div>
@@ -160,20 +150,20 @@ export default function ContactPage() {
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Service Areas</h3>
                 <div className="space-y-2 text-sm">
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-green-700 rounded-full" />
-                    <span>Decatur, Georgia (Headquarters)</span>
+                    <div className="w-2 h-2 bg-blue-600 rounded-full" />
+                    <span>Decatur, Georgia (Store Location)</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-green-600 rounded-full" />
+                    <div className="w-2 h-2 bg-purple-600 rounded-full" />
                     <span>Greater Atlanta Area</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-green-800 rounded-full" />
-                    <span>Nationwide Treasury Services</span>
+                    <div className="w-2 h-2 bg-blue-700 rounded-full" />
+                    <span>Nationwide Shipping</span>
                   </div>
                 </div>
                 <p className="text-xs text-gray-500 mt-3">
-                  We provide IRS Department of Treasury services nationwide.
+                  We ship premium products nationwide with fast delivery.
                 </p>
               </CardContent>
             </Card>
@@ -183,13 +173,13 @@ export default function ContactPage() {
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Contact</h3>
                 <div className="space-y-3">
-                  <Button className="w-full bg-green-700 hover:bg-green-800 text-white justify-start">
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white justify-start">
                     <Mail className="mr-2 h-4 w-4" />
                     Email: support@thetdsstore.com
                   </Button>
-                  <Button variant="outline" className="w-full justify-start border-green-700 text-green-700 hover:bg-green-700 hover:text-white">
+                  <Button variant="outline" className="w-full justify-start border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
                     <MessageSquare className="mr-2 h-4 w-4" />
-                    Treasury Services
+                    Product Support
                   </Button>
                 </div>
               </CardContent>
@@ -263,13 +253,13 @@ export default function ContactPage() {
                         required
                         value={formData.subject}
                         onChange={handleInputChange}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
                       >
-                        <option value="general">General Treasury Inquiry</option>
-                        <option value="tax">Tax Services</option>
-                        <option value="compliance">Compliance Services</option>
-                        <option value="business">Business Treasury Services</option>
-                        <option value="government">Government Services</option>
+                        <option value="general">General Product Inquiry</option>
+                        <option value="products">Product Information</option>
+                        <option value="orders">Order Support</option>
+                        <option value="shipping">Shipping & Returns</option>
+                        <option value="business">Business Orders</option>
                       </select>
                     </div>
                   </div>
@@ -285,8 +275,8 @@ export default function ContactPage() {
                       rows={6}
                       value={formData.message}
                       onChange={handleInputChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700"
-                      placeholder="Please describe your treasury service inquiry or requirements..."
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+                      placeholder="Please describe your product inquiry or requirements..."
                     />
                   </div>
 
@@ -329,7 +319,7 @@ export default function ContactPage() {
                     <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="bg-green-700 hover:bg-green-800 text-white px-8 py-3"
+                      className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3"
                     >
                       {isSubmitting ? (
                         <>
@@ -378,38 +368,38 @@ export default function ContactPage() {
               <CardContent className="p-6">
                 <h3 className="font-semibold text-gray-900 mb-2">What are your response times?</h3>
                 <p className="text-gray-600 text-sm">
-                  We typically respond to all treasury service inquiries within 24 hours during business days.
-                  Urgent tax matters are prioritized and may receive faster responses.
+                  We typically respond to all product inquiries within 24 hours during business days.
+                  Urgent orders and customer service matters are prioritized for faster responses.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-semibold text-gray-900 mb-2">Do you offer business packages?</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Do you offer bulk orders?</h3>
                 <p className="text-gray-600 text-sm">
-                  Yes, we offer comprehensive business treasury service packages.
-                  Contact us with your requirements for a custom service plan.
+                  Yes, we offer special pricing for bulk orders and business customers.
+                  Contact us with your requirements for a custom quote.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-semibold text-gray-900 mb-2">What services do you provide?</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">What products do you offer?</h3>
                 <p className="text-gray-600 text-sm">
-                  We provide comprehensive IRS Department of Treasury services including tax preparation,
-                  compliance services, and government regulatory assistance.
+                  We offer premium products across multiple categories including kitchen essentials,
+                  health & beauty, electronics, and lifestyle products for modern living.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-semibold text-gray-900 mb-2">Do you serve clients nationwide?</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Do you ship nationwide?</h3>
                 <p className="text-gray-600 text-sm">
-                  Yes, our IRS Department of Treasury services are available nationwide.
-                  We serve clients across all states with professional treasury solutions.
+                  Yes, we ship our premium products nationwide with fast and reliable delivery.
+                  We serve customers across all states with quality products and excellent service.
                 </p>
               </CardContent>
             </Card>
