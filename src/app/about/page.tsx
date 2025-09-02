@@ -69,6 +69,17 @@ export default function AboutPage() {
                 <p className="text-gray-900"><strong>Phone:</strong> <span className="text-blue-600">+1 (404) 259-0953</span></p>
                 <p className="text-gray-900"><strong>Email:</strong> <span className="text-blue-600">support@thetdsstore.com</span></p>
               </div>
+              <div className="space-y-8">
+          <div className="bg-white p-8 rounded-lg shadow-sm">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Story</h2>
+            <p className="text-gray-700 mb-4">
+              Founded in 2023, The tds Store  was born in BLACKMON DR, Canada with one mission: to create apparel that connects emotionally, not just visually. As a family-owned business, we believe clothing should be personal — it should make you feel something.
+            </p>
+            <p className="text-gray-700">
+              Over the past year, we've grown from a small Canadian brand to a trusted online store, delivering our signature designs across the U.S. and North America. Every design is built with purpose and personality — we don't just make clothes, we craft statements.
+            </p>
+          </div>
+            </div>
             </div>
           </div>
         </div>
