@@ -15,11 +15,14 @@ export default function homepage() {
       {/* Hero Section */}
       <section className="relative h-[600px] w-full overflow-hidden bg-gradient-to-r from-blue-600 to-purple-700">
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-lg">
-            The TDS Store
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+            Trusted Design & Lifestyle Store
           </h1>
-          <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl drop-shadow-lg">
-            Discover premium products and exceptional services at The TDS Store. Quality items and professional solutions in Decatur, Georgia.
+          <h2 className="text-2xl md:text-3xl font-semibold text-blue-100 mb-6 drop-shadow-lg">
+            Serving Customers with Quality and Care
+          </h2>
+          <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-3xl drop-shadow-lg">
+            At The TDS Store, we've been dedicated to delivering high-quality, design-forward products to our customers for over a year. Built on a foundation of trust, reliability, and creativity, we provide products that not only inspire but also meet the everyday needs of modern living.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/products">
@@ -199,35 +202,36 @@ export default function homepage() {
         </div>
       </section>
 
-      {/* About Our Store Section */}
+      {/* Why Shop With Us Section */}
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold leading-tight text-gray-900">
-              Welcome to The TDS Store
+              Why Shop With Us?
             </h2>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              The TDS Store offers premium products and exceptional services with a focus on quality 
-              and customer satisfaction. Based in Decatur, Georgia, we serve customers with reliable products and solutions.
-            </p>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              Our products are carefully selected to meet the highest standards of quality and value. 
-              We provide comprehensive shopping solutions for individuals and businesses alike.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <div className="flex items-center gap-2">
-                <Truck className="h-5 w-5 text-blue-600" />
-                <span className="text-sm font-medium text-gray-700">Fast Shipping</span>
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">1+</span>
+                </div>
+                <span className="text-lg font-medium text-gray-700">1+ Years of Experience in serving U.S. customers</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Shield className="h-5 w-5 text-green-600" />
-                <span className="text-sm font-medium text-gray-700">Quality Guaranteed</span>
+              <div className="flex items-center gap-3">
+                <Truck className="h-8 w-8 text-blue-600" />
+                <span className="text-lg font-medium text-gray-700">Fast & Reliable Shipping on every order</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Phone className="h-5 w-5 text-purple-600" />
-                <span className="text-sm font-medium text-gray-700">24/7 Support</span>
+              <div className="flex items-center gap-3">
+                <Shield className="h-8 w-8 text-green-600" />
+                <span className="text-lg font-medium text-gray-700">Secure Payments & Easy Returns</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Phone className="h-8 w-8 text-purple-600" />
+                <span className="text-lg font-medium text-gray-700">Committed to Customer Satisfaction</span>
               </div>
             </div>
+            <p className="text-gray-600 text-lg leading-relaxed mt-6">
+              From timeless designs to everyday essentials, The TDS Store is here to provide products that bring value, style, and convenience to your life.
+            </p>
           </div>
           <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-lg border border-gray-200">
             <div className="text-center">
